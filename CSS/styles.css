@@ -1,0 +1,159 @@
+body{
+    background-color: #f3f5f9;
+}
+
+.navbar-brand {
+    font-family: 'Lobster Two', cursive;
+}
+
+#banner-section {
+    padding-top: 15vh;
+    height: 100vh;
+}
+
+#banner-section .text-box {
+    margin-top: 10vh;
+}
+
+
+#banner-section .text-box a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 40px;
+    background: linear-gradient(90deg, rgba(31, 115, 33) 35%, rgb(40, 210, 45) 100%);
+
+}
+
+#banner-section .absolute-image-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 30%;
+    background-image: url("../images/illustrations/bg.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100px 120px;
+    
+}
+
+#banner-section .absolute-image-2 {
+    position: absolute;
+    top: 80%;
+    width: 30%;
+    height: 30%;
+    background-image: url("../images/illustrations/bg.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100px 120px;
+
+}
+
+#banner-section .banner-shake {
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    left: 7%;
+    top: 120px;
+    animation: animate-banner-shake 2s linear infinite;
+
+
+}
+
+@keyframes animate-banner-shake {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#services-section .absolute-image-3 {
+    position: absolute;
+    top: 90%;
+    right: 0;
+    background-image: url("../images/illustrations/Category-bg.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 200px 300px;
+    width: 50%;
+    height: 100%;
+}
+
+#services-section .card {
+    border-radius: 20px;
+    padding-top: 20px ;
+}
+
+#services-section .card img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+#details-section .h3-for-row-2 {
+    margin: 20px;
+}
+
+#details-section ul {
+    list-style-type: none;
+}
+
+#details-section i {
+    font-size: 20px;
+    animation: up-down 4s ease-in-out infinite;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translate(-50%, -1%);
+    }
+
+    50% {
+        transform: translate(-50%, -30%);
+    }
+
+    100% {
+        transform: translate(-50%, -1%);
+    }
+}
+
+#contact-section {
+    background-image: url("../images/contact/contact.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+#contact-section div {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    height: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.2147233893557423) 35%, rgba(0,212,255,1) 100%);
+
+}
+
+footer {
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.159);
+}
+
+
+/*------------------------------------------- tablet ------------------------------------------- */
+@media screen and (min-width: 768px) {
+    #banner-section .text-box {
+        margin-top: 0vh;
+    }
+
+    #details-section .h3-for-row-2 {
+        margin: 0px;
+    }
+}
+
+
